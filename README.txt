@@ -101,7 +101,6 @@ The system supports filtering by name/department and pagination for better usabi
 [ ] Delete confirmation  
 [ ] Filtering in action 
 
-All screen shot is placed in file named "Snapshots".
 
 ====================================================
 END OF DOCUMENT
