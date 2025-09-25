@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Directory System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Employee Directory System</h1>
+  </header>
+
+  <main>
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <input type="text" id="filterName" placeholder="Filter by name">
+      <select id="filterDepartment">
+        <option value="">All Departments</option>
+        <option value="HR">HR</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+      </select>
+      <button onclick="loadEmployees(1)">Filter</button>
+    </section>
+
+    <!-- Employee Table -->
+    <section>
+          <!-- Message div -->
+          <div id="message"></div>
+
+      <h1>...Employee Details...</h1>
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>Name</th><th>Email</th><th>Department</th><th>Position</th><th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="pagination"></div>
+    </section>
+
+    <!-- Add/Edit Form -->
+    <section class="form-section">
+      <h2 id="formTitle">Add Employee</h2>
+      <form id="employeeForm">
+        <input type="hidden" id="employeeId">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <input type="text" id="position" placeholder="Position" required>
+        <button type="submit">Save</button>
+      </form>
+    </section>
+  </main>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
